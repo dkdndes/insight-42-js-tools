@@ -1,0 +1,25 @@
+# Source files (only include dist in npm)
+src/
+tests/
+docs/
+.github/
+
+# Development files
+rollup.config.js
+jest.config.js
+.eslintrc.js
+.gitignore
+.env*
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Coverage and cache
+coverage/
+.cache/
+.eslintcache
+
+# Development dependencies
+node_modules/
