@@ -1,0 +1,38 @@
+{
+  "name": "insight-42-js-utils",
+  "version": "1.0.0",
+  "description": "The ultimate collection of 42 essential JavaScript utility functions for modern web development",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src --ext .js",
+    "lint:fix": "eslint src --ext .js --fix",
+    "prepublishOnly": "npm run test && npm run build",
+    "dev": "rollup -c -w",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs"
+  },
+  "keywords": [
+    "javascript",
+    "utilities",
+    "utils",
+    "helpers",
+    "debounce",
